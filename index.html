@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+</head>
+
+
+<body class="container">
+    <br>
+    <h1 style="font-weight:bold; display: grid; place-items: center;">Groceries For The Week</h1>
+    <br>
+    
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="Store">Store</label>
+                        <input type="text" class="form-control" id="store">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-item">New Item</label>
+                        <input type="text" class="form-control" id="new-item">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-quantity">Quantity</label>
+                        <input type="text" class="form-control" id="new-quantity">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Add Item</button>
+            </div>
+        </div>
+    </div>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Store</th>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Completed</th>
+        </tr>
+    </table>
+    
+    
+    
+
+    <script src="list.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
